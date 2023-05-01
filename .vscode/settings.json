@@ -1,0 +1,18 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-12",
+    "C_Cpp.default.enableConfigurationSquiggles": true,
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.codeAnalysis.runAutomatically": false,
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "clang-analyzer-*"
+    ],
+    "markdown.preview.fontSize": 15,
+    "markdown.preview.fontFamily": "'Microsoft YaHei UI', 'Fira Code', 'JetBrains Mono'",
+    "markdown.preview.lineHeight": 1.4,
+    "markdown.occurrencesHighlight.enabled": true,
+    "markdown.preview.breaks": false,
+    "markdown.preview.typographer": false,
+    "markdown.preview.linkify": false,
+    "markdown.preview.markEditorSelection": false
+}
