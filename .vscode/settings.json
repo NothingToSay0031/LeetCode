@@ -1,6 +1,6 @@
 {
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format-12",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-14",
     "C_Cpp.default.enableConfigurationSquiggles": true,
     "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.codeAnalysis.runAutomatically": false,
@@ -14,5 +14,6 @@
     "markdown.preview.breaks": false,
     "markdown.preview.typographer": false,
     "markdown.preview.linkify": false,
-    "markdown.preview.markEditorSelection": false
+    "markdown.preview.markEditorSelection": false,
+    "editor.tabSize": 2
 }
