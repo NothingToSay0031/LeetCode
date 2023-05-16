@@ -18,29 +18,22 @@
 class Solution {
  public:
   ListNode* mergeKLists(vector<ListNode*>& lists) {
-    vector<bool> exhausted(lists.size(), false);
+    auto cmp = [](ListNode* lhs, ListNode* rhs) { return lhs->val > rhs->val; };
+    priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq(cmp);
+    for (const auto list : lists) {
+      if (list) {
+        pq.push(list);
+      }
+    }
     ListNode sentinel(0);
     auto merged = &sentinel;
-    int n = 0;
-    while (n < lists.size()) {
-      int curr_min = INT_MAX, index = -1;
-      for (int i = 0; i < lists.size(); ++i) {
-        if (exhausted[i]) {
-          continue;
-        } else if (!lists[i]) {
-          exhausted[i] = true;
-          ++n;
-        } else {
-          if (curr_min >= lists[i]->val) {
-            curr_min = lists[i]->val;
-            index = i;
-          }
-        }
-      }
-      if (index >= 0) {
-        merged->next = lists[index];
-        merged = merged->next;
-        lists[index] = lists[index]->next;
+    while (pq.size()) {
+      auto min = pq.top();
+      pq.pop();
+      merged->next = min;
+      merged = merged->next;
+      if (min->next) {
+        pq.push(min->next);
       }
     }
     return sentinel.next;
