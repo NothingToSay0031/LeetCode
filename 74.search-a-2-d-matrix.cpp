@@ -13,9 +13,9 @@ class Solution {
     while (left <= right) {
       int mid = (left + right) / 2;
       int val = matrix[mid / ncol][mid % ncol];
-      if (val > target) {
+      if (target < val) {
         right = mid - 1;
-      } else if (val < target) {
+      } else if (target > val) {
         left = mid + 1;
       } else {
         return true;
