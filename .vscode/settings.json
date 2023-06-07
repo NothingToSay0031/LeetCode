@@ -8,12 +8,12 @@
         "clang-analyzer-*"
     ],
     "markdown.preview.fontSize": 16,
-    "markdown.preview.fontFamily": "'思源宋体', 'Fira Code NFM', '思源黑体'",
+    "markdown.preview.fontFamily": "'思源宋体', 'Fira Code', '思源黑体'",
     "markdown.preview.lineHeight": 1.4,
     "markdown.occurrencesHighlight.enabled": true,
     "markdown.preview.breaks": false,
     "markdown.preview.typographer": false,
     "markdown.preview.linkify": false,
     "markdown.preview.markEditorSelection": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
 }
