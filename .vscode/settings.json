@@ -9,7 +9,6 @@
     ],
     "markdown.preview.fontSize": 16,
     "markdown.preview.fontFamily": "'思源宋体', 'Fira Code', '思源黑体'",
-    "markdown.preview.lineHeight": 1.4,
     "markdown.occurrencesHighlight.enabled": true,
     "markdown.preview.breaks": false,
     "markdown.preview.typographer": false,
